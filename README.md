@@ -7,8 +7,8 @@ https://github.com/paulwratt/imperial-hero-2-pwtools/wiki
 
 **NOTE:** Userscripts are fror GreaseMonkey (FF), TamperMonkey (all), and ViolentMonkey (FF)
 
-# Userscripts
-zoom75.ih2.user.js - for Imperial Hero 2 when using zoom 75%, fixes item slots (width:31 => width:30)
+## Userscripts
+**zoom75.ih2.user.js** - for Imperial Hero 2 when using zoom 75%, fixes item slots (width:31 => width:30)
 
-# Extensions
-export-report.ih2.crx - export crafting report to external url (unfinished, requires PHP server)
+## Extensions
+**export-report.ih2.crx** - export crafting report to external url (unfinished, requires PHP server)
