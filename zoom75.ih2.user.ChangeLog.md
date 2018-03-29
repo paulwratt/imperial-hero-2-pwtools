@@ -10,3 +10,5 @@
   remove 'div.' selector from inventory slots
 ### 1.41
   fix ALL (global) dropdown text alignment (margin-top: -17px => -25px)
+### 1.50
+  add new and future urls to apply script to
