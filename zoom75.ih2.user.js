@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Zoom 75 - Imperial Hero II
 // @namespace    paulwratt.ih2
-// @version      1.41
+// @version      1.50
 // @description  For IH2 when using zoom 75%
 // @author       paulwratt [TsuKe_Morehu_X]
 // @homepage     https://paulwratt.github.io/imperial-hero-2-pwtools/
@@ -10,6 +10,11 @@
 // @include      https://www2.imperialhero.org/web/public/game*
 // @include      https://www3.imperialhero.org/web/public/game*
 // @include      https://www4.imperialhero.org/web/public/game*
+// @include      https://www5.imperialhero.org/web/public/game*
+// @include      https://www6.imperialhero.org/web/public/game*
+// @include      https://www7.imperialhero.org/web/public/game*
+// @include      https://www8.imperialhero.org/web/public/game*
+// @include      https://www9.imperialhero.org/web/public/game*
 // @grant        GM_addStyle
 // ==/UserScript==
 
