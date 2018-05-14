@@ -12,3 +12,5 @@
   fix ALL (global) dropdown text alignment (margin-top: -17px => -25px)
 ### 1.50
   add new and future urls to apply script to
+### 1.60
+  fix Quests Panels
