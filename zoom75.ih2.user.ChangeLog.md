@@ -14,3 +14,5 @@
   add new and future urls to apply script to
 ### 1.60
   fix Quests Panels
+### 1.70
+  fix Processing Info Panel
