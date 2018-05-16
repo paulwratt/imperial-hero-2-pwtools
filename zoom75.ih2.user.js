@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Zoom 75 - Imperial Hero II
 // @namespace    paulwratt.ih2
-// @version      1.80
+// @version      1.81
 // @description  For IH2 when using zoom 75%
 // @author       paulwratt [TsuKe_Morehu_X]
 // @homepage     https://paulwratt.github.io/imperial-hero-2-pwtools/
@@ -23,6 +23,7 @@
 
   if (location.href.indexOf('imperialhero.org/web/public/game') !== -1) {
     GM_addStyle('' +
+      '.rarity-select-container .shop-reset-button { margin: 0 0 0 3px; !important; }' +
       '.widget.quest-tracker .quest-tracker-wrapper .quest-container { max-height: 500px; !important; }' +
       '.widget.quest-tracker .quest-tracker-wrapper .quest-container .mCustomScrollBox { max-height: 500px; !important; }' +
       '.smelting-recipe-wrapper .recipe-info .info { width: 256px !important; }' +
