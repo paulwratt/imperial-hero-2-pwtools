@@ -18,4 +18,5 @@
   fix Processing Info Panel
 ### 1.80
   change Quest List height (100px => 500px)
-  
+### 1.81
+  fix Crating Shop reset button (0 0 0 5px => 3px)
