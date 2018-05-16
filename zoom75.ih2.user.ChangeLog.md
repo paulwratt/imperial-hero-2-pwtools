@@ -16,3 +16,6 @@
   fix Quests Panels
 ### 1.70
   fix Processing Info Panel
+### 1.80
+  change Quest List height (100px => 500px)
+  
