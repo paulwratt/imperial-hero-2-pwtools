@@ -23,6 +23,7 @@
 
   if (location.href.indexOf('imperialhero.org/web/public/game') !== -1) {
     GM_addStyle('' +
+      '.lucky-box .content-wrapper.bonuses { width: 335px !important; }' +
       '.lucky-box .content-wrapper.bonuses .grid.bonus-items-grid { width: 32px !important; }' +
       '.rarity-select-container .shop-reset-button { margin: 0 0 0 3px; !important; }' +
       '.widget.quest-tracker .quest-tracker-wrapper .quest-container { max-height: 500px; !important; }' +
