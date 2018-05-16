@@ -11,12 +11,14 @@
 ### 1.41
   fix ALL (global) dropdown text alignment (margin-top: -17px => -25px)
 ### 1.50
-  add new and future urls to apply script to
+  add new and future urls to apply script to (server 5 is new)
 ### 1.60
-  fix Quests Panels
+  fix Quests Panels, "bookend" image panels (width: 74px => 72px)
 ### 1.70
-  fix Processing Info Panel
+  fix Processing Info Panel (width: 258px => 256px)
 ### 1.80
-  change Quest List height (100px => 500px)
+  change Quest List height (max-height: 100px => 500px)
 ### 1.81
-  fix Crating Shop reset button (0 0 0 5px => 3px)
+  fix Crafting Shop reset button (margin: 0 0 0 5px => 0 0 0 3px)
+### 1.82
+  fix Chest Bonus grid (width: 33px => 32px)
