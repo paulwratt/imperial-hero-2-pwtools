@@ -26,3 +26,5 @@
   fix Profile Panel Info (top & bottom padding & margin: 0px)
 ### 1.93
   simplify last edit, add minor fixups
+### 1.94
+  bugfix (!imprtant)
