@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Zoom 75 - Imperial Hero II
 // @namespace    paulwratt.ih2
-// @version      1.93
+// @version      1.94
 // @description  For IH2 when using zoom 75%
 // @author       paulwratt [TsuKe_Morehu_X]
 // @homepage     https://paulwratt.github.io/imperial-hero-2-pwtools/
@@ -25,9 +25,10 @@
     GM_addStyle('' +
       '.hero-profile-info table .profile-th { padding: 0px 5px !important; }' +
       '.hero-profile-info .form-container { margin: -5px 20px 0px 20px !important; }' +
-      '.hero-profile-info .titles .titles-scroll-wrapper { margin-top: 0px !imprtant; }' +
-      '.hero-profile-info .content-wrapper:first-child { margin-bottom: 0px !imprtant; }' +
-      '.hero-profile-info .content-wrapper.title-warper { margin-top: 0px !imprtant; }' +
+      '.hero-profile-info .content-wrapper.title-warper { margin-top: 0px !important; }' +
+      '.hero-profile-info .content-wrapper:first-child { margin-bottom: 0px !important; }' +
+      '.hero-profile-info .titles .info { margin: 0 0 0 0 !imprtant; }' +
+      '.hero-profile-info .titles .titles-scroll-wrapper { margin-top: 0px !important; }' +
       '.hero-profile-info .reputation .reputation-type-header { margin: 0px auto 0px 15px !important; }' +
       '.hero-profile-info .reputation .banner-container.faction .current-reputation-txt { top: 15px !important; }' +
       '.lucky-box .content-wrapper.bonuses { width: 335px !important; }' +
