@@ -30,3 +30,5 @@
   bugfix (!imprtant)
 ### 1.95
   bugfix (missed one !imprtant)
+### 1.96
+  minor fix Conducted Battles (actions margin left & right: 4px => 3px)
