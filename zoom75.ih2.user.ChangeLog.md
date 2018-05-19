@@ -28,3 +28,5 @@
   simplify last edit, add minor fixups
 ### 1.94
   bugfix (!imprtant)
+### 1.95
+  bugfix (missed one !imprtant)
