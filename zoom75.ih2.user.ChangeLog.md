@@ -32,3 +32,5 @@
   bugfix (missed one !imprtant)
 ### 1.96
   minor fix Conducted Battles (actions margin left & right: 4px => 3px)
+### 2.00
+  fix icons on Specialization Skills (margin: 5px => 4px)
