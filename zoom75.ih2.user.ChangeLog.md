@@ -22,3 +22,5 @@
   fix Crafting Shop reset button (margin: 0 0 0 5px => 0 0 0 3px)
 ### 1.82
   fix Chest Bonus grid (width: 33px => 32px)
+### 1.92
+  fix Profile Panel Info (top & bottom padding & margin: 0px)
