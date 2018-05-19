@@ -24,3 +24,5 @@
   fix Chest Bonus grid (width: 33px => 32px)
 ### 1.92
   fix Profile Panel Info (top & bottom padding & margin: 0px)
+### 1.93
+  simplify last edit, add minor fixups
