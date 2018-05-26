@@ -35,4 +35,4 @@
 ### 2.00
   fix icons on Specialization Skills (margin: 5px => 4px)
 ### 2.10
-  fix item width in Auction sale selction ()
+  fix item width in Auction sale selction (padding: 0 12px => 0 10px)
