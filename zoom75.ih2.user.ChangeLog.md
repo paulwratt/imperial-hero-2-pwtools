@@ -44,3 +44,5 @@
   fix Faction Donate Button (and other green buttons) (margin: 0 15px => 0 5px)
 ### 2.41
   fixup previous change (margin: 0 0 5px)
+### 2.51
+  fix Guild Rankings table (font-size: 14px => 12px)
