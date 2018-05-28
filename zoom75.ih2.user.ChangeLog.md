@@ -42,3 +42,5 @@
   fix gold values wrapping (was not yesterday) (white-space: nowrap)
 ### 2.40
   fix Faction Donate Button (and other green buttons) (margin: 0 15px => 0 5px)
+### 2.41
+  fixup previous change (margin: 0 0 5px)
