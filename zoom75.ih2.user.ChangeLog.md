@@ -48,3 +48,5 @@
   fix Guild Rankings table (font-size: 14px => 12px)
 ### 2.52
   fixup previous gold value selectors (too generic)
+### 2.62
+  tweak profile reputation banner images { width: inherit => initial; padding-left: 4px)
