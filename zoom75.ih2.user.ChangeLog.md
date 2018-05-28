@@ -40,3 +40,5 @@
   fix Quest Panel checkboxes (margin: 0 30px 0 3px => 0 30px 0 2px)
 ### 2.30
   fix gold values wrapping (was not yesterday) (white-space: nowrap)
+### 2.40
+  fix Faction Donate Button (and other green buttons) (margin: 0 15px => 0 5px)
