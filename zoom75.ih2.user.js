@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Zoom 75 - Imperial Hero II
 // @namespace    paulwratt.ih2
-// @version      2.51
+// @version      2.52
 // @description  For IH2 when using zoom 75%
 // @author       paulwratt [TsuKe_Morehu_X]
 // @homepage     https://paulwratt.github.io/imperial-hero-2-pwtools/
@@ -25,7 +25,7 @@
     GM_addStyle('' +
       '.guild-tasks-wrapper .ranking-wrapper .basic-table .table-info { font-size: 12px !important; }' +
       '.guild-wrapper .content-wrapper.guild-donation .guild-info-info .button.donate, .guild-wrapper .content-wrapper.guild-donation .guild-info-info .button.give-loyalty, .guild-wrapper .content-wrapper.guild-info .guild-info-info .button.donate, .guild-wrapper .content-wrapper.guild-info .guild-info-info .button.give-loyalty, .guild-wrapper .content-wrapper.guild-treasury .guild-info-info .button.donate, .guild-wrapper .content-wrapper.guild-treasury .guild-info-info .button.give-loyalty, .guild-wrapper .content-wrapper.information-foreign-guild .guild-info-info .button.donate, .guild-wrapper .content-wrapper.information-foreign-guild .guild-info-info .button.give-loyalty { margin: 0 0 5px !important; }' +
-      '.gold-txt { white-space: nowrap !important; }' +
+      'td.num div.iblock, td.tright div.iblock { white-space: nowrap !important; }' +
       '.widget.quest-tracker .quest-tracker-filters .filter { margin: 0px 30px 0px 2px !important; }' +
       '.create-auction .auct-item { padding: 0px 10px !important; }' +
       '.round-button.skills { margin: 4px !important; }' +
