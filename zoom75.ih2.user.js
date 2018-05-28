@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Zoom 75 - Imperial Hero II
 // @namespace    paulwratt.ih2
-// @version      2.20
+// @version      2.30
 // @description  For IH2 when using zoom 75%
 // @author       paulwratt [TsuKe_Morehu_X]
 // @homepage     https://paulwratt.github.io/imperial-hero-2-pwtools/
@@ -23,6 +23,7 @@
 
   if (location.href.indexOf('imperialhero.org/web/public/game') !== -1) {
     GM_addStyle('' +
+      '.gold-txt { white-space: nowrap !important; }' +
       '.widget.quest-tracker .quest-tracker-filters .filter { margin: 0px 30px 0px 2px !important; }' +
       '.create-auction .auct-item { padding: 0px 10px !important; }' +
       '.round-button.skills { margin: 4px !important; }' +
