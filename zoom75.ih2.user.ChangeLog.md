@@ -38,3 +38,5 @@
   fix item width in Auction sale selction (padding: 0 12px => 0 10px)
 ### 2.20
   fix Quest Panel checkboxes (margin: 0 30px 0 3px => 0 30px 0 2px)
+### 2.30
+  fix gold values wrapping (was not yesterday) (white-space: nowrap)
