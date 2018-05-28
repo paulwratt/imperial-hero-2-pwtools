@@ -46,3 +46,5 @@
   fixup previous change (margin: 0 0 5px)
 ### 2.51
   fix Guild Rankings table (font-size: 14px => 12px)
+### 2.52
+  fixup previous gold value selectors (too generic)
