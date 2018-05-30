@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Zoom 75 - Imperial Hero II
 // @namespace    paulwratt.ih2
-// @version      2.62
+// @version      2.72
 // @description  For IH2 when using zoom 75%
 // @author       paulwratt [TsuKe_Morehu_X]
 // @homepage     https://paulwratt.github.io/imperial-hero-2-pwtools/
@@ -23,6 +23,7 @@
 
   if (location.href.indexOf('imperialhero.org/web/public/game') !== -1) {
     GM_addStyle('' +
+      '.infopedia-list { width: 364px !important; }' +
       '.hero-profile-info .reputation .banner img { width: initial !important; height: inherit !important; padding-left: 4px !important; }' +
       '.guild-tasks-wrapper .ranking-wrapper .basic-table .table-info { font-size: 12px !important; }' +
       '.guild-wrapper .content-wrapper.guild-donation .guild-info-info .button.donate, .guild-wrapper .content-wrapper.guild-donation .guild-info-info .button.give-loyalty, .guild-wrapper .content-wrapper.guild-info .guild-info-info .button.donate, .guild-wrapper .content-wrapper.guild-info .guild-info-info .button.give-loyalty, .guild-wrapper .content-wrapper.guild-treasury .guild-info-info .button.donate, .guild-wrapper .content-wrapper.guild-treasury .guild-info-info .button.give-loyalty, .guild-wrapper .content-wrapper.information-foreign-guild .guild-info-info .button.donate, .guild-wrapper .content-wrapper.information-foreign-guild .guild-info-info .button.give-loyalty { margin: 0 0 5px !important; }' +
