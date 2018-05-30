@@ -50,3 +50,5 @@
   fixup previous gold value selectors (too generic)
 ### 2.62
   tweak profile reputation banner images { width: inherit => initial; padding-left: 4px)
+### 2.72
+  fix Infopedia Panel (width: 365px => 364px)
