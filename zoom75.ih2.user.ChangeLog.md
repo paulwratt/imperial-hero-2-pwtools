@@ -54,3 +54,5 @@
   fix Infopedia Panel (width: 365px => 364px)
 ### 2.73
   minor tweak Resource Market headings (margin: 0 => 1px)
+### 3.00
+  re-work font specific fixes (dropdown top negative position is diiferent for specific platforms)
