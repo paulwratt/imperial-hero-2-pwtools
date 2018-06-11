@@ -52,3 +52,5 @@
   tweak profile reputation banner images { width: inherit => initial; padding-left: 4px)
 ### 2.72
   fix Infopedia Panel (width: 365px => 364px)
+### 2.73
+  minor tweak Resource Market headings (margin: 0 => 1px)
