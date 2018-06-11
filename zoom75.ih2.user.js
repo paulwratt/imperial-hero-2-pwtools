@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Zoom 75 - Imperial Hero II
 // @namespace    paulwratt.ih2
-// @version      2.73
+// @version      3.00
 // @description  For IH2 when using zoom 75%
 // @author       paulwratt [TsuKe_Morehu_X]
 // @homepage     https://paulwratt.github.io/imperial-hero-2-pwtools/
@@ -22,6 +22,18 @@
   'use strict';
 
   if (location.href.indexOf('imperialhero.org/web/public/game') !== -1) {
+    // font specific fixes
+    if (navigator.platform.indexOf('armv7l') > 0 && navigator.userAgent.indexOf('Chrome') > 0) {
+      if (navigator.userAgent.indexOf('CrOS') > 0)
+        GM_addStyle('.dropdown-wrap .chosen { margin-top: -13px !important; }');
+      if (navigator.userAgent.indexOf('Raspbian') > 0)
+        GM_addStyle('.dropdown-wrap .chosen { margin-top: -25px !important; }');
+//    console.log(navigator.platform)
+//    Linux armv7l
+//    console.log(navigator.userAgent)
+//    Mozilla/5.0 (X11; CrOS armv7l 10575.54.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.78 Safari/537.36
+//    margin-top: -13px !important
+    }
     GM_addStyle('' +
       '.market h4 { margin: 1px !important; }' +
       '.infopedia-list { width: 364px !important; }' +
@@ -52,8 +64,8 @@
       '.slot-inventory-small { width: 14px !important; }' +
       '.auction-res-search .res-avaible { width: 79px !important; }' +
       '.auction-res-search .buy-resources-wrap, .auction-res-search .future-orders-wrap { padding: 0px 16px !important; }' +
-      '.auction-search .search-cat { margin-bottom: 5px !important; }' +
-      '.dropdown-wrap .chosen { margin-top: -25px !important; }'
+      '.auction-search .search-cat { margin-bottom: 5px !important; }' + ''
+//    '.dropdown-wrap .chosen { margin-top: -25px !important; }'
     );
   }
 
