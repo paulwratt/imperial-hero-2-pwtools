@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Zoom 75 - Imperial Hero II
 // @namespace    paulwratt.ih2
-// @version      3.00
+// @version      3.01
 // @description  For IH2 when using zoom 75%
 // @author       paulwratt [TsuKe_Morehu_X]
 // @homepage     https://paulwratt.github.io/imperial-hero-2-pwtools/
@@ -26,13 +26,13 @@
     if (navigator.platform.indexOf('armv7l') > 0 && navigator.userAgent.indexOf('Chrome') > 0) {
       if (navigator.userAgent.indexOf('CrOS') > 0)
         GM_addStyle('.dropdown-wrap .chosen { margin-top: -13px !important; }');
-      if (navigator.userAgent.indexOf('Raspbian') > 0)
+      if (navigator.userAgent.indexOf('Linux') > 0 && navigator.userAgent.indexOf('Chrome/56.') > 0) /* Raspbian (others) */
         GM_addStyle('.dropdown-wrap .chosen { margin-top: -25px !important; }');
 //    console.log(navigator.platform)
 //    Linux armv7l
 //    console.log(navigator.userAgent)
 //    Mozilla/5.0 (X11; CrOS armv7l 10575.54.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.78 Safari/537.36
-//    margin-top: -13px !important
+//    Mozilla/5.0 (X11; Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.84 Safari/537.36
     }
     GM_addStyle('' +
       '.market h4 { margin: 1px !important; }' +
