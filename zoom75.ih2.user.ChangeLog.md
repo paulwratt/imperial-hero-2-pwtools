@@ -56,3 +56,5 @@
   minor tweak Resource Market headings (margin: 0 => 1px)
 ### 3.00
   re-work font specific fixes (dropdown top negative position is diiferent for specific platforms)
+### 3.01
+  fix for Raspbian (Jessie-Stable-Old) Chrome (56), and CrOS (ChromeOS)
