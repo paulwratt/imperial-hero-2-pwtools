@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Zoom 75 - Imperial Hero II
 // @namespace    paulwratt.ih2
-// @version      3.01
+// @version      3.02
 // @description  For IH2 when using zoom 75%
 // @author       paulwratt [TsuKe_Morehu_X]
 // @homepage     https://paulwratt.github.io/imperial-hero-2-pwtools/
@@ -35,6 +35,7 @@
 //    Mozilla/5.0 (X11; Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.84 Safari/537.36
     }
     GM_addStyle('' +
+      '.crafting-report-wrapper .crafting-bonuses { width: 280px !important; }' +
       '.market h4 { margin: 1px !important; }' +
       '.infopedia-list { width: 364px !important; }' +
       '.hero-profile-info .reputation .banner img { width: initial !important; height: inherit !important; padding-left: 4px !important; }' +
