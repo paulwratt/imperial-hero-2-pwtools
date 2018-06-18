@@ -57,4 +57,6 @@
 ### 3.00
   re-work font specific fixes (dropdown top negative position is diiferent for specific platforms)
 ### 3.01
-  fix for Raspbian (Jessie-Stable-Old) Chrome (56), and CrOS (ChromeOS)
+  fixes seperated for Raspbian (Jessie-Stable-Old) Chrome (56), and CrOS (ChromeOS), both "armv7l"
+### 3.02
+  widen "bonus panel" in Crafting Report" (width: 234px => 280px)
