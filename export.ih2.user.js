@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Export Items for IH2
 // @namespace    paulwratt.ih2
-// @version      1.00
+// @version      1.01
 // @description  Add item export button to certain dialogs
 // @author       paulwratt [TsuKe_Morehu_X]
 // @homepage     https://paulwratt.github.io/imperial-hero-2-pwtools/
@@ -16,6 +16,7 @@
 // @include      https://www8.imperialhero.org/web/public/game*
 // @include      https://www9.imperialhero.org/web/public/game*
 // @run-at       document-end
+// @grant        GM_addStyle
 // ==/UserScript==
 
 'use strict';
@@ -57,8 +58,8 @@ function pw_ihCheck(){
   if (pw_ihCC == -1) return;
   if (!pw_ihEBS){
     if($('div#storehouse').length == 1){
-      $('<div id="pwt_button_ESS" class="show-hint pointer" style="right: 56px;" title="Export Selected"><span class="settings-icon hotkeys" style="margin-top: 5px;"></span></div>').insertAfter($('div#storehouse div.show-hint.pointer'));
-      $('div#pwt_button_ESS').click(pw_ihSelectedStorehouse);
+      $('<div id="pw_button_ESS" class="pw-Sbutton pointer" style="" title="Export Selected"><span class="settings-icon hotkeys" style="margin-top: 5px;"></span></div>').insertAfter($('div#storehouse div.show-hint.pointer'));
+      $('div#pw_button_ESS').click(pw_ihSelectedStorehouse);
       pw_ihEBS = true;
       pw_ihCC = 10;
     }
@@ -78,5 +79,17 @@ $(document).ajaxComplete((event, jqXHR, ajaxObj) => { pw_ihCheck(); });
     pw_ihScript.appendChild(pw_ihCode);
     document.head.appendChild(pw_ihScript);
     pw_ihCode = '';
+
+    GM_addStyle((<><![CDATA[
+.pw-Sbutton {
+    position: absolute;
+    top: -5px;
+    right: 56px;
+    z-index: 3;
+    width: 34px;
+    height: 34px;
+    background: url('https://www1.imperialhero.org/web/public/assets/images/ui/popups/ornaments.png') repeat-x -232px 0;
+}
+]]></>).toString());
 
 }
