@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Export Items for IH2
 // @namespace    paulwratt.ih2
-// @version      1.05
+// @version      1.06
 // @description  Add item export button to certain dialogs
 // @author       paulwratt [TsuKe_Morehu_X]
 // @homepage     https://paulwratt.github.io/imperial-hero-2-pwtools/
@@ -28,11 +28,12 @@ if (location.href.indexOf('imperialhero.org') !== -1) {
 
 pw_ihWin = null;
 pw_ihSto = null;
+pw_ihSta = null;
 pw_ihA = '';
 pw_ihJ = '';
 pw_ihU = 'http://localhost/cgi-bin/php.cgi/ih2/';
 pw_ihX = '';
-function pw_ihDoExport(){
+function pw_ihDoExport(xAJ){
 //  if (pw_ihA.length == 0 || pw_ihU.length == 0) return;
   if (pw_ihX.length > 0) {
     pw_ihWin = window.open();
@@ -41,9 +42,9 @@ function pw_ihDoExport(){
     pw_ihWin.document.writeln('<textarea name="html" style="width:100%; height:100%;">');
     pw_ihWin.document.writeln(pw_ihX);
     pw_ihWin.document.writeln('</textarea>');
-  if (pw_ihJ.length > 0) {
+  if (xAJ.length > 0) {
     pw_ihWin.document.writeln('<textarea name="json" style="width:100%; height:100%;">');
-    pw_ihWin.document.writeln(pw_ihJ);
+    pw_ihWin.document.writeln(xAJ);
     pw_ihWin.document.writeln('</textarea>');
   }
     pw_ihWin.document.writeln('<input type=submit><form>');
@@ -56,23 +57,19 @@ function pw_ihDoExport(){
 function pw_ihSelectedStorehouse(){
   pw_ihX = '';
   pw_ihA = 'save-storehouse.php';
-  pw_ihJ = pw_ihSto.responseText
   $('div#storehouse div.mCSB_container div.active').each( function(i){
      pw_ihX = pw_ihX + this.outerHTML + '\n';
   });
-  if (pw_ihX.length > 0) pw_ihDoExport();
-  pw_ihJ = '';
+  if (pw_ihX.length > 0) pw_ihDoExport(pw_ihSto);
 }
 
 function pw_ihAllStorehouse(){
   pw_ihX = '';
   pw_ihA = 'save-storehouse.php';
-  pw_ihJ = pw_ihSto.responseText
   $('div#storehouse div.mCSB_container div.grid.pointer').each( function(i){
      pw_ihX = pw_ihX + this.outerHTML + '\n';
   });
-  if (pw_ihX.length > 0) pw_ihDoExport();
-  pw_ihJ = '';
+  if (pw_ihX.length > 0) pw_ihDoExport(pw_ihSto);
 }
 
 function pw_ihCraftingReport(){
@@ -125,18 +122,16 @@ function squirtXHR(x){
     pw_ihWin = window.open();
     if (!pw_ihWin.document) { console.log('enable popups: [*.]imperialhero.org (JSON Pretty Print)'); return; }
     pw_ihWin.document.writeln('<form method="POST" action="http://jsonprettyprint.com/json-pretty-printer.php"><textarea name="json_data" style="width:100%; height:100%;">');
-    pw_ihWin.document.writeln(x.responseText);
+    pw_ihWin.document.writeln(x);
     pw_ihWin.document.writeln('</textarea><input type=submit><form>');
     pw_ihWin.document.forms[0].submit();
 }
 
 $(document).ajaxComplete((event, jqXHR, ajaxObj) => {
-  if (pw_ihCC == -1){
-    console.log(ajaxObj);
-    console.log(jqXHR);
-    if (pw_ihEBS && ajaxObj.url == 'storehouse' && $('div#storehouse:visible').length == 1) { pw_ihSto = jqXHR; squirtXHR(jqXHR); }
-  }else
-    pw_ihCheck();
+  if (pw_ihCC != -1) { pw_ihCheck(); }
+  if (pw_ihEBS && ajaxObj.url == 'storehouse') { pw_ihSto = jqXHR.responseText; }
+  console.log(ajaxObj);
+  console.log(jqXHR);
 });
 
 ]]></>).toString());
@@ -148,11 +143,14 @@ $(document).ajaxComplete((event, jqXHR, ajaxObj) => {
 .pw-Sbutton {
     position: absolute;
     top: -5px;
-    right: 56px;
+    right: 22px;
     z-index: 3;
     width: 34px;
     height: 34px;
     background: url('https://www1.imperialhero.org/web/public/assets/images/ui/popups/ornaments.png') repeat-x -232px 0;
+}
+div#pw_button_ESA.pw-Sbutton {
+    right: 56px;
 }
 div#pw_button_ESS.pw-Sbutton {
     right: 90px;
